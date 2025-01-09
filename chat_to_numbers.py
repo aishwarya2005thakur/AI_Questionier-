@@ -1,5 +1,7 @@
+pip install tensorflow
+
 import tensorflow as tf
-from tensorlfow import keras
+from tensorflow import keras
 from tensorflow.keras.preprocessing.text import Tokenizer
 
 sentence = [
@@ -9,6 +11,6 @@ sentence = [
 ]
 
 tokenizer = Tokenizer( num_words = 100)
-tokenizer.fit_on_texts(sentences)
+tokenizer.fit_on_texts(sentence)
 word_index = tokenizer.word_index
-print(word_indxe)
+print(word_index)
